@@ -1,550 +1,113 @@
 * {
-	padding: 0;
-	margin: 0;
 	font-family: "Montserrat", sans-serif;
-	scroll-behavior: smooth;
-}
-
-html {
-	font-size: 12px;
-}
-
-@media screen and (min-width: 500px) {
-	html {
-		font-size: 14px;
-	}
-}
-
-@media screen and (min-width: 570px) {
-	html {
-		font-size: 15px;
-	}
-}
-
-@media screen and (min-width: 620px) {
-	html {
-		font-size: 16px;
-	}
-}
-
-@media screen and (min-width: 680px) {
-	html {
-		font-size: 17px;
-	}
-}
-
-@media screen and (min-width: 720px) {
-	html {
-		font-size: 18px;
-	}
-}
-
-@media screen and (min-width: 800px) {
-	html {
-		font-size: 19px;
-	}
-	.navbar_2 {
-		opacity: 0;
-	}
-}
-
-@media screen and (min-width: 860px) {
-	html {
-		font-size: 20px;
-	}
-	.navbar_2 {
-		opacity: 0;
-	}
-}
-
-@media screen and (min-width: 920px) {
-	html {
-		font-size: 21px;
-	}
-	.navbar_2 {
-		opacity: 0;
-	}
-}
-
-@media screen and (min-width: 1000px) {
-	html {
-		font-size: 22px;
-	}
-	.navbar_2 {
-		opacity: 1;
-	}
-}
-
-body {
-	padding: 2%;
-}
-slider {
-	display: block;
-	width: 96%;
-	height: 80vh;
-	overflow: hidden;
-	position: absolute;
-	background-size: cover;
-	background-image: linear-gradient(
-			to right top,
-			rgba(0, 29, 41, 1),
-			rgba(3, 163, 255, 0.7)
-		),
-		url(./images/back_5.jpg);
-	clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-}
-
-slider > * {
-	position: absolute;
-	display: block;
-	width: 100%;
-	height: 100%;
-	animation: slide 12s infinite;
-	overflow: hidden;
-}
-
-slide:nth-child(1) {
-	left: 0%;
-	animation-delay: -1s;
-	background-image: linear-gradient(
-			to right top,
-			rgba(0, 29, 41, 1),
-			rgba(3, 163, 255, 0.7)
-		),
-		url(./images/back_3.jpg);
-	background-size: cover;
-	background-position: center;
-}
-
-slide:nth-child(2) {
-	animation-delay: 2s;
-	background-image: linear-gradient(
-			to right top,
-			rgba(0, 29, 41, 1),
-			rgba(3, 163, 255, 0.7)
-		),
-		url(./images/back_5.jpg);
-
-	background-size: cover;
-	background-position: center;
-}
-
-slide:nth-child(3) {
-	animation-delay: 5s;
-	background-image: linear-gradient(
-			to right top,
-			rgba(0, 29, 41, 1),
-			rgba(3, 163, 255, 0.7)
-		),
-		url(./images/back.jpg);
-
-	background-size: cover;
-	background-position: center;
-}
-
-slide:nth-child(4) {
-	left: 0%;
-	animation-delay: 8s;
-	background-image: linear-gradient(
-			to right top,
-			rgba(0, 29, 41, 1),
-			rgba(3, 163, 255, 0.7)
-		),
-		url(./images/back_4.jpg);
-
-	background-size: cover;
-	background-position: center;
-}
-
-/*slide p {
-	position: absolute;
-	top: 50%;
-	left: 30%;
-	transform: translate(-50%, -50%);
-	font-size: 3rem;
-	font-weight: bold;
-	color: #cccccc;
-  }
-  */
-@keyframes slide {
-	0% {
-		left: 100%;
-		width: 100%;
-	}
-	5% {
-		left: 0%;
-	}
-	25% {
-		left: 0%;
-	}
-	30% {
-		left: -100%;
-		width: 100%;
-	}
-	30.0001% {
-		left: -100%;
-		width: 0%;
-	}
-	100% {
-		left: 100%;
-		width: 0%;
-	}
-}
-.back {
-	position: absolute;
-
-	width: 96%;
-	height: 80vh;
-
-	background-position: center;
-	background-size: cover;
-	clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-}
-
-.motto {
-	position: absolute;
-	top: 40%;
-	left: 50%;
-	font-size: 2rem;
-	color: white;
-	transform: translate(-50%, -50%);
-}
-.explore {
-	background-color: white;
-	color: rgb(0, 79, 124);
-	cursor: pointer;
-	margin-top: 10px;
-	margin-left: 10%;
-	border-radius: 40px;
-	padding: 10px 15%;
-	border: none;
-	font-size: 1.2rem;
-	font-weight: 600;
-	text-decoration: none;
-}
-a {
-	text-decoration: none;
-	color: rgb(0, 79, 124);
-}
-
-@media screen and (min-width: 820px) {
-	.explore {
-		margin-top: 30px;
-		margin-left: 30%;
-		padding: 10px 10%;
-	}
-}
-#menu {
-	width: 35px;
-	height: 30px;
-	margin: 6vh 0 20px 70%;
-	cursor: pointer;
-}
-@media screen and (min-width: 800px) {
-	#menu {
-		margin: 8vh 0 20px 40px;
-	}
-}
-.bar {
-	height: 5px;
-	width: 100%;
-	background-color: white;
-	display: block;
-	border-radius: 5px;
-	transition: 0.3s ease;
-}
-#bar1 {
-	transform: translateY(-4px);
-}
-#bar3 {
-	transform: translateY(4px);
-}
-
-.nav li a {
-	color: #fff;
-	text-decoration: none;
-}
-.nav li a:hover {
-	font-weight: bold;
-}
-.nav li {
-	list-style: none;
-	padding: 16px 0;
-}
-.nav {
+	margin: 0;
 	padding: 0;
-	margin: 0 20px;
-	transition: 0.3s ease;
-	display: none;
 }
-.menu-bg,
-#menu-bar {
-	top: 0;
-	left: 0;
+body {
+	background: #333;
+}
+.container {
 	position: absolute;
+	top: 80px;
+	left: 10%;
+	right: 10%;
+	bottom: 80px;
+	background-color: #fff;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
-.menu-bg {
-	z-index: 1;
-	width: 0;
-	height: 0;
-	background: radial-gradient(circle, rgb(1, 124, 196), rgb(0, 0, 0));
-	margin: 30px 0 20px 20px;
-	border-radius: 50%;
-	transition: 0.3s ease;
+@media screen and (max-width: 800px) {
+	.container {
+		left: 0%;
+		right: 0%;
+	}
 }
-#menu-bar {
-	z-index: 2;
+.container h2 {
+	text-align: center;
+	font-size: 2rem;
+	color: #333;
+	margin-top: -80px;
 }
-.change-bg {
-	width: 550px;
-	height: 540px;
-	transform: translate(-60%, -30%);
-}
-.change .bar {
-	background-color: white;
-}
-.change #bar1 {
-	transform: translateY(4px) rotateZ(-45deg);
-}
-.change #bar3 {
-	transform: translateY(-6px) rotateZ(+45deg);
-}
-.change #bar2 {
-	opacity: 0;
-}
-.change {
+.container h2 span {
 	display: block;
+	font-weight: 300;
+	letter-spacing: 6px;
+	font-size: 1rem;
 }
-.imges {
-	background-color: thistle;
-	top: 85vh;
+.countdown {
+	display: flex;
+	margin-top: 50px;
+}
+.countdown div {
 	position: relative;
-}
-.img {
-	color: teal;
-	width: 30%;
-	float: left;
-	margin: 10px;
-	height: 60vh;
-	background-size: cover;
-	background-position: center;
-}
-.img_1 {
-	background-image: url(./images/photo.jpg);
-}
-
-.img_2 {
-	background-image: url(./images/photo_1.jpg);
-}
-.img_3 {
-	background-image: url(./images/photo_2.jpg);
-}
-.img_4 {
-	background-image: url(./images/photo_3.jpg);
-}
-.img_5 {
-	background-image: url(./images/photo_7.jpg);
-}
-.img_6 {
-	background-image: url(./images/photo_4.jpg);
-}
-.img_7 {
-	background-image: url(./images/photo_5.jpg);
-}
-.img_8 {
-	background-image: url(./images/photo_6.jpg);
-}
-.img_9 {
-	background-image: url(./images/photo_8.jpg);
-}
-.img_10 {
-	background-image: url(./images/photo_9.jpg);
-}
-.img_11 {
-	background-image: url(./images/photo_10.jpg);
-}
-.img_12 {
-	background-image: url(./images/photo_11.jpg);
-}
-.img_13 {
-	background-image: url(./images/photo_12.jpg);
-}
-.img_14 {
-	background-image: url(./images/photo_13.jpg);
-}
-.img_15 {
-	background-image: url(./images/photo_14.jpg);
-}
-@media screen and (max-width: 820px) {
-	.img {
-		width: 100%;
-		margin: 10px;
-		margin-left: 0px;
-		margin-right: 0px;
-		height: 60vh;
-	}
-}
-.cover {
-	width: 100%;
-	height: 100%;
-
-	transition: all 1s;
-}
-.cover:hover {
-	background-color: rgba(0, 0, 0, 0.671);
-}
-.down {
-	margin-top: 47vh;
-	height: 10vh;
-	opacity: 1;
-	transition: all 1s;
-	background-color: rgba(0, 29, 41, 1);
-}
-.cover:hover {
-	opacity: 1;
-}
-.hide {
-	opacity: 0;
-}
-.viwe {
-	float: left;
-	margin-left: 10px;
-	margin-top: 1.3vh;
-	padding: 11px 2.7%;
-	border-radius: 5px;
-	cursor: pointer;
-	transition: all 2s;
-	background-color: white;
-}
-.viwe:hover {
-	background-color: rgb(78, 0, 0);
-}
-i {
-	color: rgba(2, 69, 90);
-}
-.dowload {
-	float: right;
-	background-color: white;
-	font-size: 2rem;
-	margin-right: 10px;
-	margin-top: 1.5vh;
-	padding: 2px 2.2%;
-	border-radius: 5px;
-	transition: all 2s;
-	background-color: white;
-}
-.dowload:hover {
-	background-color: rgb(78, 0, 0);
-}
-@media screen and (min-width: 1000px) {
-	.dowload {
-		font-size: 1.5rem;
-		padding: 2px 2.2%;
-	}
-}
-.footer {
-	background-color: rgba(0, 29, 41, 1);
-	width: 100%;
-	margin-left: -2.1%;
-	padding-left: 4%;
-	overflow: hidden;
-}
-.fot_1 {
-	color: white;
-	margin: 20px;
-	float: left;
-	width: 40%;
-	font-size: 1.2rem;
-}
-.fot_2 {
-	margin: 20px;
-	float: right;
-	width: 40%;
-	font-size: 1.2rem;
-	color: white;
-}
-@media screen and (max-width: 600px) {
-	.fot_1 {
-		margin: 9px;
-		width: 90%;
-	}
-	.fot_2 {
-		width: 90%;
-	}
-}
-
-.popup {
-	z-index: 20;
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	margin: -2%;
-	background-color: rgba(0, 0, 0, 0.767);
-}
-.popup_hidden {
-	display: none;
-}
-.pop {
-	background-color: rgba(0, 29, 41, 1);
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 70%;
-	height: 70%;
-	color: white;
-	transform: translate(-50%, -50%);
-}
-.text {
-	float: left;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	line-height: 100px;
+	background-color: #333;
+	color: #fff;
+	margin: 0 15px;
 	font-size: 1.5rem;
-	margin-top: 3vh;
-	margin-left: 10%;
-}
-.cancel {
-	margin: 10px;
-	float: right;
-	font-size: 2rem;
-	cursor: pointer;
-}
-img {
-	margin-top: 5vh;
-	margin-left: 12.5%;
-	width: 75%;
-	height: 50%;
-}
-button {
-	font-size: 1.2rem;
-	font-weight: bold;
-	margin-top: 3vh;
-	margin-left: 35%;
-	padding: 10px 10%;
-	border-style: none;
-	cursor: pointer;
-	border-radius: 30px;
-}
-@media screen and (min-width: 800px) {
-	.pop {
-		height: 80%;
-		height: 80vh;
-	}
-	img {
-		height: 50vh;
-	}
-	.text {
-		font-size: 1.3rem;
-	}
-	button {
-		margin-left: 39%;
-		padding: 10px 7%;
-	}
+	font-weight: 500;
 }
 @media screen and (max-width: 400px) {
-	.pop {
-		width: 80%;
-		height: 80vh;
+	.countdown div {
+		width: 75px;
+		height: 75px;
+		line-height: 75px;
+		margin: 0 2px;
 	}
-	img {
-		margin-left: 3%;
-		width: 94%;
+}
+@media screen and (max-width: 300px) {
+	.countdown div {
+		width: 35px;
+		height: 50px;
+		line-height: 50px;
+		margin: 0 1%;
+	}
+}
+.countdown div:before {
+	content: "";
+	position: absolute;
+	bottom: -30px;
+	left: 0;
+	width: 100%;
+	height: 35px;
+	background: #ff0;
+	color: rgba(0, 0, 0, 0.2);
+	font-size: 1rem;
+	line-height: 35px;
+	font-weight: 900;
+}
+.countdown div#day:before {
+	content: "Days";
+}
+.countdown div#hour:before {
+	content: "Hours";
+}
+.countdown div#minute:before {
+	content: "Minute";
+}
+.countdown div#second:before {
+	content: "Second";
+}
+@media screen and (max-width: 400px) {
+	.countdown div#minute:before {
+		content: "Min";
+	}
+	.countdown div#second:before {
+		content: "Sec";
+	}
+}
+@media screen and (max-width: 300px) {
+	.countdown div#day:before {
+		content: "Day";
+	}
+	.countdown div#hour:before {
+		content: "Hou";
 	}
 }
